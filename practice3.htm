@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.drpbtn {
+    padding: 5px 15px;
+    background-color:  rgb(15, 227, 93);
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+}
+.drp {
+    position: relative;
+    display: inline-block;
+}
+.drp-con {
+    display: none;
+    position: absolute;
+    background-color: beige;
+    min-width: 150px;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2) ;
+    z-index: 1;
+}
+.drp-con a{
+    text-decoration: none;
+    text-align: left;
+    color: black;
+    padding: 10px 6px;
+    display: block;
+    border-bottom: 1px solid black;
+}
+.drp-con a:hover {
+    background-color: gray;
+}
+.drp:hover .drp-con {
+    display: block;
+}
+.div-img {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+.div3-img{
+    border: 2px solid black;
+}
+.div2-img {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.div-img:hover .div2-img {
+    display: block;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    float: left;
+}
+
+li.list {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+a:hover {
+    background-color: rgb(82, 80, 80);
+}
+#home {
+    background-color: gold;
+}
+
+.des {
+    position: absolute;
+    display: none;
+    color: black;
+    background-color: rgb(0, 0, 0);
+    min-width: 160px;
+    box-shadow: 0px 3px 4px rgba(0,0,0,0.4), 1px -1px 5px 0px rgba(1, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.list:hover .des {
+    display: inline-block;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Hoverable Dropdown</h2>
+<p>Move the mouse over the text below to open the dropdown content.</p>
+
+<div class="dropdown">
+  <span>Mouse over me</span>
+  <div class="dropdown-content">
+  <p>Hello World!</p>
+  </div>
+</div><hr>
+<div class="drp">
+    <button type="button" class="drpbtn">DropDown</button>
+    <div class="drp-con">
+        <a href="#">chap 1</a>
+        <a href="#">chap 2</a>
+        <a href="#">chap 3</a>
+    </div>
+</div><hr>
+<p>image description :</p>
+<div class="div-img">
+    <img class="image" src="arsenal.jpg" alt="arsenals shirt"  width="120px" height="100px">
+    <div class="div2-img">
+        <img src="arsenal.jpg" alt="arsenal shirt"  width="300px" height="350px">
+        <p> arsenal 24/25 away kit</p>
+    </div>
+</div><hr>
+    <ul>
+        <li><a href="#" id="home">home</a></li>
+        <li><a href="#">contact</a></li>
+        <li class="list"><a href="#" class="descrip">Description</a>
+            <div class="des">
+                <a href="#">link1</a>
+                <a href="#">link2</a>
+                <a href="#">link3</a>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up Page</title>
+        <style>
+            #dive2 {
+                background-color: white;
+                border-radius: 20px;
+                border: none;
+                width: 40%;
+                text-align: center;
+                margin-top: 125px;
+                margin-bottom: 100px;
+                margin-right: 100px;
+                margin-left: 270px; 
+            }
+
+            input[type=text], input[type=password] {
+                width:55%;
+                padding: 15px 16px;
+                margin-top:15px  ;
+                margin-left: 20px;
+            }
+            input[type=text]:focus {
+                background-color: rgb(232, 217, 237);
+                border: 2px solid #555;
+            }
+            input[type=password]:focus {
+                background-color: rgb(232, 217, 237);
+                border: 2px solid #555;
+            }
+
+            input[type=submit] {
+                background-color: rgb(89, 23, 122);
+                color: white;
+                border: none;
+                border-radius: 6px;
+                box-sizing: border-box;
+                padding: 14px 45px ;
+                margin-bottom: 70px;
+                text-align: center;
+            }
+            input[type=submit]:hover{
+                background-color: rgb(63, 12, 111);
+            }
+
+            body {
+                background-image: url('blck.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            h1 {
+                margin-bottom: 20px;
+                padding-top: 60px;
+                font-size: 45px;
+            }
+        
+            img {
+                border: 1px solid black;
+                border-radius: 5px;
+                width: 35px;
+                height: 35px;
+                margin-inline-start: 8px;
+            }
+            a {
+                text-decoration: none;
+                color: rgba(0, 0, 0, 0.495);
+            }
+            a:hover {
+                color: rgb(23, 25, 25);
+            }
+            #dive1 {
+                float: right;
+                background-color: rgb(89, 23, 122);
+                margin-right:300px;
+                border-top-left-radius: 100px;
+                border-bottom-left-radius: 100px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                text-align: center;
+                padding: 87px;
+            }
+            
+            #sub {
+                background-color: rgb(89, 23, 122);
+                color: white;
+                border: none;
+                border-radius: 6px;
+                box-sizing: border-box;
+                padding: 14px 45px ;
+                margin-bottom: 70px;
+                text-align: center;
+                border: 2px solid white;
+            }
+            #sub:hover {
+                background-color: rgb(63, 12, 111);
+            }
+        
+        </style>
+    </head>
+    <body>
+        <div id="dive1">
+            <h1>Hello, Friend!</h1>
+            <p>register with your personal details to use all<br>of site features</p>
+            <input type="submit" id="sub" value="Sign Up">
+        </div>
+        <div id="dive2">
+            <form method="post">
+                <h1>Sign In</h1>
+                <a href="facebook.com"><img src="fb.jpg" alt="facebook" ></a>
+                <a href="instagram.com"><img src="insta.jpg" alt="instagram"></a>
+                <a href="twitter.com"><img src="x.jpg" alt="twitter"></a>
+                <a href="google.com"><img src="goggle.jpg" alt="google"></a><br>
+                <caption style="color:black;font-family: Verdana, Geneva, Tahoma, sans-serif;">Sign up in other ways</caption><br>
+
+
+                <input type="text" id="email" name="email" placeholder="EMAIL"><br>
+                <input type="password" id="password" name="password" placeholder="PASSWORD"><br>
+
+                <p><a href="forget_password" target="_blank">Forget Password?</a></p><br>
+                <input type="submit" value="Sign In">
+            </form>
+        </div>
+    </body>
+</html>

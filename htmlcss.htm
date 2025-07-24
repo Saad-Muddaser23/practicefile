@@ -1,0 +1,185 @@
+<!DOCTYPE HTTML>
+<html>
+    <head>
+        <title> Formula 1</title>
+        <link rel="iconic" type="image/x-icon" href="..\Users\DELL\Downloads\favicon.ico">
+        <meta name="viewport" content="width-device-width , initial-scale=1.0">
+    <style>
+        table,th,td{
+            border: 3px solid black;
+            border-collapse: collapse;
+            
+        }
+        tr:hover{
+            background-color: lightskyblue;
+        }
+        .something{
+            background-color: rgb(190, 89, 156);
+            padding: 10px;
+            margin: auto;
+            color: aliceblue;
+        }
+        a{
+            display: block;
+            color: rgb(103, 63, 71);     
+        }
+        a:hover{
+            color: aqua;
+        }
+        a:active{
+            color: darkmagenta;
+        }
+        a:visited{
+            color:#53bb5a;
+        }
+        #ha {
+            background-color: aqua;
+            color: violet;
+            padding: 30px;
+            text-decoration: wavy;
+            text-align: center;
+            border: 2px solid black;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+            }
+
+            li {
+            float: left;
+            }
+
+            li a {
+            display:grid;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            text-decoration:dotted;
+            }
+
+            li a:hover {
+            background-color: #111111;
+            display: table;
+            }
+    </style>
+    </head>
+    <body>
+        <h1>f1 first model</h1>
+        <p></p>
+        <table style="width:50%">
+            <colgroup>
+                <col span="2" style="background-color: lightsalmon;">
+            </colgroup>
+            <tr>
+                <th colspan="4">names</th>
+            </tr>
+            <tr>
+                <td>saad</td>
+                <td>hamza</td>
+                <td>taha</td>
+                <td>hassan</td>
+            </tr>
+            <tr>
+                <th colspan="4">ids & age</th>
+            </tr>
+            <tr>
+                <td>5932</th>
+                <td>0463</td>
+                <td>2839</td>
+                <td>1032</td>    
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>18</td>
+                <td>22</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <th colspan="4">institute</th>
+            </tr>
+            <tr>
+                <td>college</td>
+                <td>uni</td>
+                <td>uni</td>
+                <td>graduate</td>
+            </tr>
+        </table>
+        <a href="#ha">jump to chapter 1</a>
+        <!-- <ul style="list-style-type: circle;"> 
+            <li>morning</li>
+            <li>noon</li>
+            <li>dusk</li>
+            <li>night</li>
+            <li>midnight</li>
+        </ul>-->
+        <hr>
+        <ul>
+            <li><a href="directnewsupdate.com" target="_blank">red f1</a></li>
+            <li><a href="c:\Users\DELL\Downloads\formula-1-mercedes-chromebook-wallpaper.jpg" target="_blank">f1 black</a></li>    
+        </ul>
+        <!-- <ol type="i" start="20"> 
+            <li>breakfast</li>
+            <li>lunch</li>
+            <li>snack</li>
+            <li>dinner</li>
+        </ol>
+        <dl>
+            <dt>breakfast</dt>
+            <dd> - eggs</dd>
+            <dt> lunch</dt>
+            <dd> - chicken</dd>
+            <dt>dinner</dt>
+            <dd> - biryani</dd>
+        </dl>-->
+        <div class="something">
+            <h1>FERRARI F1</h1>
+            <p>ferrari is luxury car with lots of new features mosty is red color which is there iconic color</p>
+        </div>
+        <div class="something">
+            <h1>AXP</h1>
+            <p> axp gp is a new brand of f1 cars with sunny hayes this season they are near to score atleast 3rd position this year</p>
+        </div>
+        <hr>
+        <p>&#128518</p>
+        <p style="color: #333333; background-color: powderblue;">A Formula One (F1) car is a highly specialized, single-seat, open-wheel racing car designed for
+             the Formula One World Championship.<br> These cars are renowned for their incredible speed, aerodynamic design, 
+             and cutting-edge technology.<br> Key features include a carbon fiber monocoque chassis, powerful turbocharged engines, 
+             and sophisticated aerodynamics, including front and rear wings and underbody tunnels</p>
+        <h1 id="ha">chapter 1</h1>
+        <p>its about id</p>
+        <p id="demo">hello html</p>
+        <script>
+            function myfunc(){
+                document.getElementById("demo").innerHTML = "hello javascript" ;
+                document.getElementById("demo").style.fontSize = 20;
+            }
+        </script>
+        <button type="reset" onclick="myfunc()">reset</button>
+        <button type="button" onclick="myfunc()">click here</button>
+        <iframe src="f1.jpg" style="width: 100%;height: 200px;" title="iframe_ex" name="iframe_a"></iframe>
+        <a href="w3schools.com" target="iframe_a">click here</a> 
+        <img src="f1.jpg" alt="red car" width="100px" height="70px">
+        
+        <label for="password">PASSWORD:</label>
+        <input type="password" id="pass" name="pass"><br>
+        <input type="checkbox" onclick="myfunc1()">show password
+
+        <script>
+            function myfunc1(){
+            var x = document.getElementById('pass');
+            if (x.type === "text"){
+                x.type = "password";
+            } else {
+                x.type = "text";
+            }
+            }
+        </script>
+        <p style="margin-left: 80px;"><img src="search.jpg" alt="none" height="100px" width="100px" style="float: right;">A Formula One (F1) car is a highly specialized, single-seat, open-wheel racing car designed for
+             the Formula One World Championship. These cars are renowned for their incredible speed, aerodynamic design, 
+             and cutting-edge technology. Key features include a carbon fiber monocoque chassis, powerful turbocharged engines, 
+             and sophisticated aerodynamics, including front and rear wings and underbody tunnels</p>
+    </body>
+</html>

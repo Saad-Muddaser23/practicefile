@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2nd webpage</title>
+        <style>
+            label {
+                text-transform: capitalize;
+            }
+            input[type=text], select{
+                width: 100%;
+                border-radius: 4px;
+                margin: 12px 10px;
+                padding: 20px;
+                text-transform: capitalize;
+                border: none;
+                box-sizing: border-box;
+                /* transition: width 0.4s ease-in-out; */
+            }
+
+            /* input[type=text]:focus {
+                width:100%;
+            } */
+
+            input[type=submit]{
+               width: 100%;
+               background-color: darkslateblue;
+               color: white;
+               text-align: center;
+               border-radius: 4px;
+               margin: 10px;
+               padding: 20px;
+               cursor:pointer;
+            }
+
+            input[type=submit]:hover{
+                background-color: rgb(38, 20, 78);
+            }
+
+            div{
+                background-color: beige;
+                padding: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <form method="post">
+            <label for="username">username</label><br>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">password</label><br>
+            <input type="text" id="password" name="password"><br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+
+            <select>
+                <option value="pasta">pasta</option>
+                <option value="burger">burger</option>
+                <option value="pizza">pizza</option>
+                <option value="biryani">biryani</option>
+            </select> 
+            
+            <p>whats your favourite language</p>
+            <label for="html">HTML</label>
+            <input type="radio" id="html" name="html" value="HTML">
+            <label for="css">CSS</label>
+            <input type="radio" id="css" name="css" value="CSS">
+            <label for="python">PYTHON</label>
+            <input type="radio" id="python" name="python" value="PYTHON">
+            <input type="submit" value="submit"><br><br> 
+
+            <input type="button" onclick="alert('warning!')" value="dont click"><br>
+
+            <label for="quantity">QUANTITY</label>
+            <input type="number" id="num" name="num" min="0" max="100" step="5"><br><br>
+
+            <label for="color">whats your favourite color</label>
+            <input type="color" id="color" name="color" value="red">
+            <input type="submit" value="give"><br><br>
+
+            <label for="datemin">enter a date </label>
+            <input type="date" id="datemin" name="datemin" min="12-03-2001">
+            <label for="datemax">enter a date</label>
+            <input type="date" id="datemax" name="datemax" max="12-05-2025">
+            <input type="submit" value="here to submit"><br><br>
+
+            <label for="file">whats your favourite color</label>
+            <input type="file" id="file" name="file" >
+            <input type="submit" value="give"><br><br>
+        </form> -->
+        <div>
+        <form method="post">
+            <label for="username">username</label><br>
+            <input type="text" id="username" name="username" placeholder="your name"><br>
+            <label for="password">password</label><br>
+            <input type="text" id="password" name="password" placeholder="your pass"><br>
+
+            <label for="country">country</label><br>
+
+            <select>
+                <option value="saudi arabia">saudi arabia</option>
+                <option value="iran">iran</option>
+                <option value="palestine">palestine</option>
+                <option value="pakistan">pakistan</option>
+                
+            </select>
+            <input type="submit" value="submit">
+            
+        </form>
+        </div>
+    </body>
+</html>
+</html>
